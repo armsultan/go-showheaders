@@ -1,7 +1,9 @@
 # go-showheaders
 A Simple Go app to Display hostname, IP address and Request Headers
 
-For maximum lightweightness:
+ ![Screenshot](https://raw.githubusercontent.com/armsultan/go-showheaders/master/screenshot.png)
+
+For maximum lightweightness (< 6MB):
 
 1. **app.go** was complied with:
 	
@@ -13,6 +15,9 @@ See:
 
 * **app-source.go** for source code
 * Dockerfile for build information (very basic)
-
-Code modified from 
+* Code modified from 
  [arjanschaaf.github.io](https://arjanschaaf.github.io/request-headers-webserver-in-go/) 
+ 
+
+
+ 
