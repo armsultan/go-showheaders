@@ -7,7 +7,7 @@ For maximum lightweightness (< 6MB):
 
 1. **app.go** was complied with:
 	
-	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app.go .
+	`CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app.go .`
 
 1. Then added to a minimal [scratch](https://hub.docker.com/_/scratch/) Docker container
 
