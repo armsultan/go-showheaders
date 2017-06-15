@@ -13,7 +13,7 @@ For maximum lightweightness (< 6MB):
 
 See:
 
-* **app-source.go** for source code
+* /Extras/**app-source.go** for source code
 * Dockerfile for build information (very basic)
 * Code modified from 
  [arjanschaaf.github.io](https://arjanschaaf.github.io/request-headers-webserver-in-go/) 
