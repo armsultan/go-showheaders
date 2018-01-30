@@ -10,9 +10,13 @@ For maximum lightweightness (< 6MB):
 import `"nginx/unit"` and use `unit.ListenAndServe` function instead of `"net/http"`. [See here](http://unit.nginx.org/installation/) 
 for more details on building Go applications for Nginx Unit
 
-1. **app.go** was complied with:
+1. go apps was complied with:
 
 	`CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app.go .`
+
+1. go apps for **Nginx Unit** can be complied from the unit server using:
+
+	`GOPATH=/usr/share/gocode go build -o /tmp/app-v1-green-u.go /go-showheaders/Extras/nginx-unit/source/v1-green/app-v1-source.go`
 
 1. To containerize add to a minimal [scratch](https://hub.docker.com/_/scratch/) Docker container, or
 2. run using Nginx Unit [See here](http://unit.nginx.org/installation/)
