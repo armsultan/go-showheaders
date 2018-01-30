@@ -26,6 +26,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
   <style type="text/css">
 		body {
 			background-color: blue;
+			color: white;
 		}
         header {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -55,7 +56,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err)
 	}
-	// Show the text "version 1", this app can be used to show handling of different
+	// Show the text "version 2", this app can be used to show handling of different
 	// versions of an application i.e. used show blue/green, A-B and Nginx Unit testing
 	fmt.Fprintln(w, "<h1>Version 2</h1>")
 	fmt.Fprintln(w, "<h2>Hostname:", name, "</h1>")

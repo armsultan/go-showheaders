@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net"
 	"net/http"
+	"nginx/unit"
 	"os"
 	"sort"
-	"nginx/unit"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -27,6 +27,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
   <style type="text/css">
 		body {
 			background-color: green;
+			color: white;
 		}
         header {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -58,7 +59,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 	// Show the text "version 1", this app can be used to show handling of different
 	// versions of an application i.e. used show blue/green, A-B and Nginx Unit testing
-	fmt.Fprintln(w, "<h1>Version 2</h1>")
+	fmt.Fprintln(w, "<h1>Version 1</h1>")
 	fmt.Fprintln(w, "<h2>Hostname:", name, "</h1>")
 
 	// Show IP Address
