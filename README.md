@@ -10,7 +10,7 @@ For maximum lightweightness (< 6MB):
 import `"nginx/unit"` and use `unit.ListenAndServe` function instead of `"net/http"`. [See here](http://unit.nginx.org/installation/) 
 for more details on building Go applications for Nginx Unit
 
-1. go apps was complied with:
+1. go apps can be complied with:
 
 	`CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app.go .`
 
