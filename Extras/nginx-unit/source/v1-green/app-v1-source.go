@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"sort"
+	"nginx/unit"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -19,7 +20,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 <head>
   <meta charset="utf-8">
   <title>Show me Headers! V1</title>
-  <meta name="description" content="Version1: A Simple application to show Hostname, IP Address and Request Headers">
+  <meta name="descriptionå" content="Version1: A Simple application to show Hostname, IP Address and Request Headers">
   <meta name="author" content="Armand Sultantono">
   </head>
   <body>
@@ -57,7 +58,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 	// Show the text "version 1", this app can be used to show handling of different
 	// versions of an application i.e. used show blue/green, A-B and Nginx Unit testing
-	fmt.Fprintln(w, "<h1>Version 1</h1>")
+	fmt.Fprintln(w, "<h1>Version 2</h1>")
 	fmt.Fprintln(w, "<h2>Hostname:", name, "</h1>")
 
 	// Show IP Address
@@ -101,5 +102,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	http.ListenAndServe(":80", nil)
+	//http.ListenAndServe(":80", nil)
+	unit.ListenAndServe(":80", nil) // For Nginx Unit Compatibility
 }
