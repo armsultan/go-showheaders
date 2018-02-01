@@ -12,6 +12,6 @@ GOPATH=/usr/share/gocode go build -o /tmp/app-v2-blue-u.go /tmp/my-go-app/Extras
 
 service unit restart
 service unit loadconfig /tmp/my-go-app/Extras/nginx-unit/examples/unit.config
-curl http://localhost:8500/
-curl http://localhost:8600/
-curl http://localhost:8700/
+curl -s http://localhost:8500/ | grep title
+curl -s http://localhost:8600/ | grep title
+curl -s http://localhost:8700/ | grep title
