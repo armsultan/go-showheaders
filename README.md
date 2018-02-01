@@ -18,6 +18,10 @@ for more details on building Go applications for Nginx Unit
 
 	`GOPATH=/usr/share/gocode go build -o /tmp/app-v1-green-u.go /go-showheaders/Extras/nginx-unit/source/v1-green/app-v1-source.go`
 
+1. To compile **Nginx Unit** go apps and load configuration live, you can run the script:
+
+	`curl -L https://raw.githubusercontent.com/armsultan/go-showheaders/master/Extras/nginx-unit/examples/install-app.sh | sudo bash`
+
 1. To containerize add to a minimal [scratch](https://hub.docker.com/_/scratch/) Docker container, or
 2. run using Nginx Unit [See here](http://unit.nginx.org/installation/)
 
