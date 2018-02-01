@@ -19,8 +19,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	top := `<!DOCTYPE html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Show me Headers! V1</title>
-  <meta name="descriptionå" content="Version1: A Simple application to show Hostname, IP Address and Request Headers">
+  <title>Show me Headers! V1 Green</title>
+  <meta name="description" content="Version 1: A Simple application to show Hostname, IP Address and Request Headers">
   <meta name="author" content="Armand Sultantono">
   </head>
   <body>
